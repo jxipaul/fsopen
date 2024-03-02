@@ -1,0 +1,7 @@
+title New note in the SPA
+note over browser,server:User creates new note
+browser->server:HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over browser,server: The new note is submitted to the array and the notes are redrawn by the browser's js file.
+server->browser:Status code 201
+server->browser:{message: "note created"}
+bottomparticipants 
